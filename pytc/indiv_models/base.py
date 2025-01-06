@@ -119,7 +119,7 @@ class ITCModel:
             param_guesses = []
 
         # Grab parameter names and guesses from the self.param_definition function
-        a = inspect.getargspec(self.param_definition)
+        a = inspect.getfullargspec(self.param_definition)
 
         if type(a.args) != None:
 

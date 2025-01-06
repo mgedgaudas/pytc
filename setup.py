@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 import numpy
 
@@ -14,8 +16,15 @@ ext = Extension('pytc.indiv_models.bp_ext',['src/_bp_ext.c'], include_dirs=[nump
 # Need to add all dependencies to setup as we go!
 setup(name='pytc-fitter',
       packages=find_packages(),
+      version='1.1.5',
+      description="Python software package for analyzing Isothermal Titration Calorimetry data",
+      long_description=open("README.rst").read(),
+      author='Michael J. Harms',
+      author_email='harmsm@gmail.com',
+      url='https://github.com/harmslab/pytc',
+      download_url='https://github.com/harmslab/pytc/tarball/1.1.5',
       zip_safe=False,
-      setup_requires="numpy",
+      setup_requires=["numpy"],
       install_requires=["matplotlib","scipy","numpy","emcee","corner"],
       package_data={"":["*.h","src/*.h"]},
       classifiers=['Programming Language :: Python'],
