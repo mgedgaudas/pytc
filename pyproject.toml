@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools", 'numpy']
+build-backend = "setuptools.build_meta" 
+
+[project]
+name='pytc-fitter'
+version = '1.1.5'
+requires-python = ">=3.9"
+dependencies = ["matplotlib","scipy","numpy","emcee","corner"]
+classifiers=['Programming Language :: Python']
