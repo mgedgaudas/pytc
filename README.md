@@ -23,7 +23,7 @@ with new models.
 ```
 git clone https://github.com/harmslab/pytc.git
 cd pytc
-python3 setup.py install
+pip install .
 ```
 
 ## API demos
